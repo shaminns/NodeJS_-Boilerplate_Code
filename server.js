@@ -73,7 +73,7 @@ io.on("connection", (socket) => {
 			conversationId = conversationDetail._id;
 		}
 
-		await ChatMessageHelper.createMessage(conversationId, stringSenderId, text);
+		// await ChatMessageHelper.createMessage(conversationId, stringSenderId, text);
 		const user = getUser(stringReceiverId);
 		////
 		const receiverDetail = getUser(stringReceiverId);
